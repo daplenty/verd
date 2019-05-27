@@ -1,0 +1,37 @@
+{
+  "CLASSIFIEDS": [
+    {
+      "service_name": "classifieds-service",
+      "jdk_type": "defaultJDK8",
+      "dockerfilePath": "files/java/docker/defaultJDK8",
+      "node": "ecs-west-java-large"
+    },
+    {
+      "service_name": "classifieds-seller-service",
+      "jdk_type": "defaultJDK8",
+      "dockerfilePath": "files/java/docker/defaultJDK8",
+      "node": "ecs-west-java-large"
+    },
+    {
+      "service_name": "classifieds-statistics-service",
+      "jdk_type": "defaultJDK8",
+      "dockerfilePath": "files/java/docker/defaultJDK8",
+      "node": "ecs-west-java-large"
+    },
+    {
+      "service_name": "classifieds-favorites-service",
+      "jdk_type": "defaultJDK8",
+      "dockerfilePath": "files/java/docker/defaultJDK8",
+      "node": "ecs-west-java-large"
+    }
+  ],
+
+  "REMARKETING": [
+    {
+      "service_name": "recommender-analytics-service",
+      "jdk_type": "defaultJDK8",
+      "dockerfilePath": "files/java/docker/defaultJDK8",
+      "node": "ecs-west-java-large"
+    }
+  ]
+}
