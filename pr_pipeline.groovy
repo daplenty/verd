@@ -1,4 +1,4 @@
-def ecsBuildConf = new JsonSlurper().parseText(streamFileFromWorkspace('EcsServices.json').getText())
+def ecsBuildConf = new groovy.json.JsonSlurper().parseText(streamFileFromWorkspace('EcsServices.json').getText())
 
 ecsBuildConf.each { team , services ->
     def folderName = "java/${team}"
