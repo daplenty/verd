@@ -3,10 +3,11 @@ def ecsBuildConf = new groovy.json.JsonSlurper().parseText(streamFileFromWorkspa
 ecsBuildConf.each { team , services ->
     def folderName = "java/${team}"
 
+    
     folder(folderName) {
         displayName("${team} Jobs")
         description("folder for all ${team}s pipeline jobs")
-        listView(folderName) {
+        listView("${folderName}") {
             columns {
                 status()
                 weather()
@@ -18,7 +19,7 @@ ecsBuildConf.each { team , services ->
             }
         }
 
-        dashboardView(folderName) {
+        dashboardView("${folderName}") {
             leftPortlets {
                 testStatisticsChart()
             }
@@ -33,6 +34,7 @@ ecsBuildConf.each { team , services ->
         }
 
     }
+
 
     services.each{ service ->
 
