@@ -1,8 +1,6 @@
 def ecsBuildConf = new JsonSlurper().parseText(streamFileFromWorkspace('EcsServices.json').getText())
 
 ecsBuildConf.each { team , services ->
-    println "Name: $key Age: $value"
-
     def folderName = "java/${team}"
 
     folder(folderName) {
