@@ -16,7 +16,7 @@ ecsBuildConf.each { team , services ->
      def jdk_type =  service.jdk_type
      def dockerfilePath =  service.dockerfilePath
      def labelName = service.node
-     def jobName = "PR_${projectName}_${jdk_type}_IMAGE"
+     def jobName = "MasterPR_${projectName}_${jdk_type}_IMAGE"
 
         pipelineJob("${folderName}/${jobName}") {
 
