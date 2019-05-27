@@ -93,7 +93,7 @@ ecsBuildConf.each { team , services ->
 
 
             environmentVariables {
-                envs('projectName': projectName, 'labelName': labelName, 'mavenOptions': mavenOptions, 'dockerfilePath': dockerfilePath)
+                envs('projectName': projectName, 'labelName': labelName, 'dockerfilePath': dockerfilePath)
             }
 
             definition {
