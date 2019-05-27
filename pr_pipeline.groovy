@@ -7,32 +7,6 @@ ecsBuildConf.each { team , services ->
     folder(folderName) {
         displayName("${team} Jobs")
         description("folder for all ${team}s pipeline jobs")
-        listView("${folderName}") {
-            columns {
-                status()
-                weather()
-                name()
-                lastSuccess()
-                lastFailure()
-                lastDuration()
-                buildButton()
-            }
-        }
-
-        dashboardView("${folderName}") {
-            leftPortlets {
-                testStatisticsChart()
-            }
-            rightPortlets {
-                testTrendChart()
-            }
-            bottomPortlets {
-                testStatisticsGrid {
-                    useBackgroundColors(true)
-                }
-            }
-        }
-
     }
 
 
